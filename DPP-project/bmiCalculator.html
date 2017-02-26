@@ -21,15 +21,18 @@
         <br /> <br/>
         <b><p id = "info"> </p> 
         <p>
-        <br />    
+            
        <form action="">
+        <input type="radio" name="gender" value="child"> Child
           <input type="radio" name="gender" value="male"> Male
           <input type="radio" name="gender" value="female"> Female<br>
         
         <br />
         Height: <input type="height" id="userHeight"  /> Meter
+           <a href="#" id="changeUnit" type="button" class="UnitButton">METRIC/IMPERIAL</a>
         <br /><br />
-        Weight: <input type = "weight" id= "userWeight" />  Kg <br /> <br/>
+        Weight: <input type = "weight" id= "userWeight" />  Kg 
+           <a href="#" id="changeUnit" type="button" class="UnitButton">METRIC/IMPERIAL</a><br /> <br/>
         BMI Result: <input type = "weight" id= "result" /> kg/m2 </b> 
         <div id="BMIResult"></div>
         <br /> 
@@ -39,7 +42,7 @@
         <a href="#" id="Calculate" type="button" class="submitButton corners hide">CALCULATE</a>
         
         
-        <a href="#" id="changeUnit" type="button" class="submitButton corners hide">METRIC</a>
+        
         <br />
         </form>
         </div>

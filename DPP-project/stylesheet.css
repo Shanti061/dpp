@@ -17,6 +17,12 @@ h2{
     text-shadow: 1px 1px 3px #666666;
 }
 
+p.info1{
+    color: aliceblue;
+}
+
+
+
 .submitButton {
     color: white; 
     font-size: 1.5em;
@@ -29,3 +35,16 @@ h2{
 }
 
 .submitButton:hover {background-color: chocolate;}
+
+.UnitButton {
+    color: black; 
+    font-size: 0.9em;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color:chocolate;	
+    border: 3px;
+    border-radius: 12px;
+    margin-top:20px;
+}
+
+.UnitButton:hover {background-color:firebrick;}

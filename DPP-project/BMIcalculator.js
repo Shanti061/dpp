@@ -1,9 +1,9 @@
 
 
 
-var BMI ;
+var BMI;
 var calculate;
-var text1 ;
+var text1;
 
 document.getElementById("info").innerHTML = "Please enter the information below to know your BMI Calculation. ";
 
@@ -13,7 +13,8 @@ var ButtonClick = document.getElementById("Calculate").addEventListener("click",
 var ButtonClick1 = document.getElementById("changeUnit").addEventListener("click", changeBMI, false);
 
 document.getElementById("info1").innerHTML = "Normal BMI range: 18.5kg/m2 - 25 kg/m2 ";
-
+document.getElementById("info1").style.color = "black";
+document.getElementById("info1").style.fontSize="20px";
 
 
 
@@ -29,28 +30,28 @@ var weight1 = parseFloat(document.getElementById("userWeight").value);
         {
             document.getElementById("BMIResult").innerHTML = "You are severly thin!";
         }
-    else if(BMI >16 && BMI <17)
+    else if(BMI >16 && BMI < 17)
         {
             document.getElementById("BMIResult").innerHTML = "Moderate thinness!";
         }
     
-    else if(BMI >17 && BMI <18.5)
+    else if(BMI >17 && BMI < 18.5)
         {
             document.getElementById("BMIResult").innerHTML = "Mild thinness!";
         }
-    else if(BMI >18.5 && BMI <25)
+    else if(BMI >18.5 && BMI < 25)
         {
-            document.getElementById("BMIResult").innerHTML = "Moderate thinness!";
+            document.getElementById("BMIResult").innerHTML = "Normal weight!";
         }
-    else if(BMI >25 && BMI <30)
+    else if(BMI >25 && BMI < 30)
         {
             document.getElementById("BMIResult").innerHTML = "Over Weight!";
         }
-    else if(BMI >30 && BMI <35)
+    else if(BMI >30 && BMI < 35)
         {
             document.getElementById("BMIResult").innerHTML = "Obese Class I";
         }
-    else if(BMI >35 && BMI <40)
+    else if(BMI >35 && BMI < 40)
         {
             document.getElementById("BMIResult").innerHTML = "Obese Class II";
         }
@@ -64,8 +65,8 @@ var weight1 = parseFloat(document.getElementById("userWeight").value);
 
 function changeBMI(){
     
-    
-    
+    document.getElementById("userHeight").innerHTML= "Feet/Inch";
+    document.getElementById("userWeight").innerHTML= "Lbs";
     
 }
 
